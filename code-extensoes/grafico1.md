@@ -1,0 +1,8 @@
+```mermaid 
+flowchart TB
+    TURMA & PROFESSOR & ALUNO
+    TURMA --> PROFESSOR & ALUNO & CURSO
+    CURSO --> |CONTEM| CURSO_GELO & CURSO_AGUA  & CURSO_RAIO &  CURSO_TERRA  &  CURSO_FOGO
+```
+
+

@@ -1,0 +1,64 @@
+<mxfile host="65bd71144e">
+    <diagram id="uMpCoWs8Q9gbCHGxb-sQ" name="Página-1">
+        <mxGraphModel dx="1191" dy="1901" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="ALUNO" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="590" width="280" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="COD_ALUNO INTEGER&#10;&#10;&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="3" vertex="1">
+                    <mxGeometry y="26" width="280" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="NOME VARCHAR2(100)&#10;SELO_FEITI VARCHAR2(9)&#10;DAT_NASC DATE&#10;PAIS VARCHAR2(80)&#10;REGIAO_ORIGEM VARCHAR2(80)&#10;TIPO_FEITI VARCHAR2(100)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="3" vertex="1">
+                    <mxGeometry y="60" width="280" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="PROFESSOR&#10;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="-160" width="210" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="COD_PROFE" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="12" vertex="1">
+                    <mxGeometry y="26" width="210" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="12" vertex="1">
+                    <mxGeometry y="52" width="210" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="NOME_PROF VARCHAR2(100)&#10;DT_NASCIMENTO DATE&#10;BACH_FEITI VARCHAR2(20)&#10;TIPO_FEITI VARCHAR2(30)&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="12" vertex="1">
+                    <mxGeometry y="60" width="210" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="TURMA" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="210" width="230" height="198" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="COD_TURMA&#10;ID_PROF INTEGER&#10;ID_ALUN INTEGER&#10;ID_CURSO INTEGER" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="45" vertex="1">
+                    <mxGeometry y="26" width="230" height="74" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="45" vertex="1">
+                    <mxGeometry y="100" width="230" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="NOME_T VARCHAR2(80)&#10;DT_INICIO DATE&#10;DATA_FIM DATE" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="45" vertex="1">
+                    <mxGeometry y="108" width="230" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="4" target="46" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="CURSOS" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="950" y="220" width="210" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="COD_CURSO" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="64">
+                    <mxGeometry y="26" width="210" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="64">
+                    <mxGeometry y="52" width="210" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="NOME_C VARCHAR2(80)&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="64">
+                    <mxGeometry y="60" width="210" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="67" target="46">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="15" target="45">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
